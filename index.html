@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>Etsy Studio · Bağlantıyı tamamla</title>
+  <link rel="stylesheet" href="callback.css">
+  <script src="callback.js" defer></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">ETSY STUDIO</p>
+    <h1 id="title">Bağlantı sayfası hazır</h1>
+    <p id="message">Bu adresi Etsy uygulamanızın Callback URLs alanına ve masaüstü uygulamasındaki callback alanına aynı şekilde kaydedin. Ardından yetkilendirmeyi masaüstü uygulamasından başlatın.</p>
+    <section id="result" hidden>
+      <label for="callback">Masaüstü uygulamasına yapıştırılacak bağlantı</label>
+      <textarea id="callback" rows="4" readonly spellcheck="false" autocomplete="off"></textarea>
+      <button id="copy" type="button">Bağlantıyı kopyala</button>
+      <p id="status" role="status" aria-live="polite"></p>
+      <ol><li>Etsy Studio uygulamasına dönün.</li><li>Bağlantıyı “Tam callback URL” alanına yapıştırın.</li><li>“Bağlantıyı tamamla” düğmesine basın.</li></ol>
+    </section>
+    <p class="note">Bu sayfaya API anahtarı veya Shared Secret girmeyin. Sayfa Etsy tarafından üretilmemiştir; yetkilendirme sonucunu masaüstü uygulamasına taşımanıza yardımcı olur.</p>
+  </main>
+</body>
+</html>
